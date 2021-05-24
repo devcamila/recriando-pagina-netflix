@@ -1,0 +1,182 @@
+:root {
+    --vermelho:#f1d8d9;
+    --preta:#000000;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* elementos básicos */
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header {
+    display:flex; 
+    align-items: flex-start;
+    justify-content: space-between; 
+    width: 100%;
+    height: 100%;
+    
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+header .logo {
+    margin: 5px;
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-right: 30px;
+    
+}
+
+header .logo {
+    
+    font-size:36px;
+    background: rgb(163, 76, 76);
+    background: -webkit-linear-gradient(left, rgb(226, 38, 13) , yellow, rgb(105, 197, 105), cyan, rgb(78, 78, 143), Violet);
+    background: -o-linear-gradient(right, rgb(202, 73, 14), yellow, rgb(70, 119, 70), cyan, rgb(41, 41, 114), Violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, rgb(48, 48, 100), Violet);
+    background: linear-gradient(to right, rgb(226, 7, 7) , yellow, green, cyan, rgb(49, 49, 107), Violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;     
+    margin: 5px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/filmeprincipal.jpg');
+   
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   
+}
+
+.filme-principal .sinopse {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 3%;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    text-decoration: none;
+
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+/*
+opção geral: .botao i {}
+*/
+
+ .botao .fa-play {
+     margin-right: 8px;
+
+ }
+
+ .botao .fa-info-circle {
+     margin-right: 8px;
+     
+ }
+
+ .container {
+    margin-left: 20px;
+}
+
+ .filme-principal .container {
+     width: 70%;
+ }
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+    margin: 10px;
+}
+
+.titulos-cat {
+    font-family:'Arial';
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.botao a {
+    color:inherit;
+}
+
+flotter {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding: 3;
+    margin: 5px 5px 5px 5px;
+    color: white;
+}
+
+.fa-github-square {
+    margin-right: 20px;
+    size: 30px;
+}
+
+.rodape {
+    color: lightgray;
+}
+
+.rodape:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.rodape a {
+    color: inherit;
+}
